@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function validarNotas(nota, menssagem) {
+            while (isNaN(nota)) {
+                alert("Digite numeos");
+                nota = parseFloat(prompt(menssagem));
+                
+            }
+
+            return nota
+        }
+
+
+        alert('Bem-vindo ao javascript');
+
+        var nome = prompt('Digite o seu nome');
+
+        var n1 = parseFloat(prompt('digite a primeira nota'));
+        n1 = validarNotas(n1, 'digite a primeira nota');
+
+        var n2 = parseFloat(prompt('digite a segunda nota'));
+        n2 = validarNotas(n2, 'digite a segunda nota');
+
+        var media = (n1 + n2) / 2;
+
+        if (media >= 7) {
+            document.write(nome + " você ficou com a média " + media + " Aprovado");
+        }
+        else if (media < 4) {
+            document.write(nome + " você ficou com a média " + media + " Retido")
+        }
+        else {
+            document.write(nome + " você ficou com a média " + media + " Recuperação")
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

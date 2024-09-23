@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+
+<body>
+
+    <div class="container_cadastro">
+
+
+        <form class="container_form_cadastro" action="/enviar_dados" method="POST">
+            <h1 class="text_cadastro">Cadastro</h1>
+
+            <div class="input_group">
+                <input type="text" class="input_form input_form_cadastro" id="nome_input" name="nome required" placeholder="nome">
+                <input type="texto" id="sobrenome_input " class="input_form input_form_cadastro" name="sobrenome" required placeholder="sobrenome">
+            </div>
+
+            <div class="input_group">
+                <select class="input_form" id="nome_input" name="Curso" required>
+                    <option value="" disabled selected>Curso</option>
+                    <option value="nome1">Nome 1</option>
+                    <option value="nome2">Nome 2</option>
+                    <option value="nome3">Nome 3</option>
+                  </select>
+                  <input type="tel" id="telefone_input" class="input_form" name="telefone" required placeholder="Digite seu telefone">
+                </div>
+
+
+            <div class="input_group">
+                <input type="email" class="input_form" id="email_input" name="email" required placeholder="email">
+                <input type="email" class="input_form" id="confirm_email_input" name="confirm_email" required placeholder="Confirme seu email">
+            </div>
+
+            <div class="input_group">
+                <input type="password" class="input_form" id="senha_input" name="senha" required placeholder=" senha">
+                <input type="password" class="input_form" id="confirm_senha_input" name="confirm_senha" required placeholder="Confirme sua senha">
+            </div>
+            
+            
+            <input class="custom_button_cadastro" type="submit" value="Enviar">
+        </form>
+
+    </div>
+
+</body>
+
+</html>

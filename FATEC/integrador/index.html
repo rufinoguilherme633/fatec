@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container_login">
+
+        <div class="left">
+            <div class="container_logo">
+                <img class="image_logo" src="images/logo.svg" alt="">
+            </div>
+
+            <div class="container_welcome">
+                <h1 class="welcome_title">Bem Vindo</h1>
+                <h3 class="welcom_subtitle">Pegue carona de um jeito mais fácil</h3>
+            </div>
+
+            <div class="container_image">
+                <img class="image_item_left" src="images/Subtract.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="right">
+            <form class="container_form_login" action="/enviar_dados" method="POST">
+                <h1 class="text_login">Login</h1>
+
+                <input type="email" class="input_form" id="email" name="email" required placeholder="email">
+
+                <input type="password" id="password_input" class="input_form" name="nome" required placeholder="senha">
+
+                <div class="conteiner_create_count">
+                    <button class="button_create_count">Criar uma conta</button>
+                </div>
+                <input  class="custom_button_login" type="submit" value="Enviar" >
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

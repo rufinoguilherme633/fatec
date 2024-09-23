@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #rel {
+            text-align: center;
+            width: 60% ;
+            height: 190px;
+            font-size: 150px;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <script>
+        function relogio() {
+            var tempo = new Date();
+            var hora = tempo.getHours();
+            if (hora < 10) {
+                hora = '0' + hora;
+            }
+
+            var minuto = tempo.getMinutes();
+            if (minuto < 10) {
+                minuto = '0' + minuto
+            }
+
+            var segundos = tempo.getSeconds();
+
+            if (segundos < 10) {
+                segundos = "0" + segundos;
+            }
+
+            var horario = hora + ":" + minuto + ":" + segundos;
+            document.getElementById('rel').value = horario;
+        }
+
+
+        var tempo = setInterval(relogio, 1000)
+
+    </script>
+
+</head>
+
+<body>
+    <input type="text" id="rel" readonly>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container_login{
+
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+.right,.left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+}
+.image_logo{
+    height: 40vh;
+}
+
+.container_welcome{
+    text-align: center;
+}
+.welcome_title{
+    font-size: 120px;
+}
+.welcom_subtitle {
+    font-size: 30px;
+    font-weight: normal;
+
+}
+.image_item_left{
+    height: 40vh;
+}
+
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container_form_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 70%;
+    width: 80%;
+}
+
+.text_login{
+    font-size: 100px;
+    font-weight: normal;
+
+}
+
+.custom_button_login{
+    display: flex;
+    align-items: center;
+    background-color: #2171EC; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input_form {
+    width: 100%;
+    width:90% ; /* Largura máxima do campo de entrada */
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    color: #333;
+    background-color: #FBFBFB;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.conteiner_create_count{
+    text-align: end;
+    width:90% ; /* Largura máxima do campo de entrada */
+
+}
+
+.button_create_count{
+    background-color: white;
+    border: none; 
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    display: inline-block; /* Faz o botão se comportar como um bloco em linha */
+    font-size: 20px; /* Tamanho da fonte do texto */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+    
+}
+
+
+
+
+.input_form:focus {
+    outline: none;
+}
+
+
+.custom_button_login {
+    display: flex;
+    align-items: center;
+    background-color: #2171EC; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 70px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+}
+

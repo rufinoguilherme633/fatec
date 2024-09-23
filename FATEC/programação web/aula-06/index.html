@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula web</title>
+
+    <style>
+        body{
+            background-color:#067B76;
+            
+        }
+        #cadastro{
+            background-color:white;
+            margin: auto;
+            height: fit-content;
+            width: fit-content;
+            padding: 30px;
+            border-radius:30px ;   
+        }
+        h1{
+            text-align: center;
+        }
+        .titulo{
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+    <form>
+        <h1 class="titulo">Cadastro de clientes</h1>
+        <hr>
+        <div id="cadastro">
+            <p>
+                <label for="nome">nome</label>
+                <br>
+                <input type="text" name="nome" id="nome" placeholder="nome" minlength="1" maxlength="3" size="20">
+            </p>
+
+
+            <p>
+                <label for="fone">fone</label>
+                <br>
+                <input type="text" name="fone" id="fone" placeholder="fone" minlength="10" maxlength="10" size="20">
+            </p>
+
+            <p>
+                <label for="endereco">endereço</label>
+                <br>
+                <input type="text" name="endereco" id="endereco" placeholder="endereço" minlength="20" maxlength="20"
+                    size="20">
+            </p>
+
+            <p>
+                <label for="email">email</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="email" minlength="20" maxlength="20" size="20">
+            </p>
+
+            <p>
+                <label for="senha">senha</label>
+                <br>
+                <input type="password" name="senha" id="senha" placeholder="senha" minlength="20" maxlength="20"
+                    size="20">
+            </p>
+
+
+            <p>
+                <label for="senha2">confirme a senha</label>
+                <br>
+                <input type="password" name="senha2" id="senha2" placeholder="confira senha" minlength="20"
+                    maxlength="20" size="20">
+            </p>
+
+            <p>
+                <label for="nascimento">nascimento</label>
+
+                <input type="date" name="nascimento" id="nascimento" placeholder="confira data de nascimento"
+                    minlength="20" maxlength="20" size="20">
+            </p>
+
+            <p>
+                <label for="regiao">Região</label>
+
+                <select name="regiao" id="regiao">
+                    <option value="">Escolha uma região</option>
+                    <option value="norte">norte</option>
+                    <option value="sul">sul</option>
+                    <option value="leste">leste</option>
+                    <option value="oeste">oeste</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="genero">Gênero</label>
+                &nbsp; &nbsp;
+                <input type="radio" name="genero" id="genero" value="Masculino">masculino</input>
+                &nbsp; &nbsp;
+                <input type="radio" name="genero" id="genero" value="feminino">feminino</input>
+            </p>
+
+
+            <p>
+                Que tipo de noticias
+                <br>
+
+                <input type="checkbox" name="news" value="Esporte">Esporte
+
+                &nbsp; &nbsp;
+                <input type="checkbox" name="news" value="Politica">Politica
+
+                &nbsp; &nbsp;
+                <input type="checkbox" name="news" value="Entreterimento">Entreterimento
+
+                &nbsp; &nbsp;
+                <input type="checkbox" name="news" value="Cultura">Cultura
+            </p>
+
+            <p>
+            <p>Observações</p>
+            <textarea name="obs" id="obs" rows="6" cols="50" style="resize:none"></textarea>
+            </p>
+
+            <p>
+                <input type="reset" name="limpar" value="limpar">
+                <input type="submit" name="enviar" value="enviar">
+            </p>
+    </form>
+
+    </div>
+</body>
+
+</html>

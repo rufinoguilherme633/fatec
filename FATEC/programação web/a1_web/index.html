@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9b4c6c9ff0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+</head>
+
+<style>
+    body {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+        height: 18%;
+        z-index: 1;
+        /* Certifica-se de que o header fique acima do main */
+        position: relative;
+
+    }
+
+
+    .img_logo {
+        width: 15vw;
+    }
+
+    main {
+        display: flex;
+        flex-grow: 1;
+        margin: 0;
+        padding: 0;
+        z-index: 0;
+        /* Main ficará abaixo do header */
+        position: relative;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer {
+        height: 5%;
+
+    }
+</style>
+
+<body>
+    <header class="row bg-marrom-dourado d-flex justify-content-between align-items-center;">
+
+        <div
+            style="display: flex; flex-direction: column; gap: 3rem; align-items: center;justify-content: center; width: 30%;">
+            <img class="img_logo" src="img/logo.svg" alt="">
+
+            <span id="activeMenu" class="h2">Home</span>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light " style="height: 100%; flex-grow: 1;">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup"
+                style="display: flex; justify-content: end; padding-right: 5%;">
+                <div class="navbar-nav" style="gap: 10rem;">
+                    <a class="nav-item nav-link" href="pages/home.html" target="main" data-title="Home">Home</a>
+                    <a class="nav-item nav-link" href="pages/about.html" target="main" data-title="About">About</a>
+                    <a class="nav-item nav-link" href="pages/menu.html" target="main" data-title="Menu">Menu</a>
+                    <a class="nav-item nav-link" href="pages/contact.html" target="main"
+                        data-title="Contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <iframe name="main" src="pages/home.html"></iframe>
+    </main>
+    <footer class="container-fluid  text-center font-weight-bold">
+        <p>todos os direitos reservados Copyright 2024</p>
+
+        <a><i class="fa-solid fa-location-dot"></i>Rua Sebastião</a>
+        <a> <i class="fa-solid fa-phone"></i>(11) 45678-444</a>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </footer>
+
+
+    <script>
+        const navLink = document.querySelectorAll('.navbar-nav a')
+        const activeMenu = document.getElementById('activeMenu')
+
+        navLink.forEach(link => {
+            link.addEventListener('click', function () {
+                const title = this.getAttribute('data-title');
+                activeMenu.textContent = title;
+            })
+        });
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

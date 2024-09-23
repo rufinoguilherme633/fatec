@@ -1,0 +1,75 @@
+#topo{
+    background-color: aqua;  /*mudar cor de fundo */
+    width: 715px;  /*define a largura*/
+    height: 170px; /*define altura*/
+    margin: auto; /*margin: auto;: Aqui é onde a centralização horizontal acontece. O margin: auto funciona apenas quando a largura do elemento é explicitamente definida (ou seja, não é auto ou 100%). Quando você define a largura do elemento e usa margin: auto, o navegador distribui automaticamente o espaço restante ao redor do elemento de forma igual, o que efetivamente centraliza o elemento dentro do seu contêiner pai*/
+}
+
+#menu{
+    background-color: cyan;
+    width: 715px;  /*define a largura*/
+    height: 40px;
+    margin: auto;
+}
+
+#conteudo{
+    background-color: rgb(51, 48, 48);
+    width: 715px;
+    height: 400px;
+    margin: auto;
+}
+
+#rodape{
+    background-color: rgb(51, 48, 48);
+    width: 715px;
+    height: 40px;
+    margin: auto;
+}
+h1{
+   background-color: #FFF;
+background-image: url(../imagens/mini_dc.jpg);
+background-repeat: no-repeat;
+background-position: right bottom;
+padding-bottom: 5px;
+border-bottom-style:solid ;
+border-bottom-color:#036;
+font-size: 36px;
+color: #900;
+}
+
+p{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    color: white;
+}
+
+#menu ul{
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    width: 100%;
+    background-color: #ededed;
+    list-style: none;
+    font-family:tahoma ;
+    background-color: red;
+}
+
+#menu ul li{
+    display: inline;
+}
+
+#menu ul li a{
+    background-color: rgb(51, 48, 48);
+    color: cadetblue;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+    padding: 10px 36px;
+    float: left;
+}
+
+#menu ul li a:hover{
+    background-color:#d6d6d6;
+    border-bottom: 3px solid #ea0000;
+  
+}

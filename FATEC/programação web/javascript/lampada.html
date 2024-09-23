@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function acende(){
+            document.getElementById("luz").src=('img/acende.jpg');
+        }
+        function apaga(){
+            document.getElementById("luz").src=('img/apaga.jpg');
+        }
+        function quebra(){
+            document.getElementById("luz").src=('img/quebra.jpg');
+        }
+    </script>
+</head>
+<body>
+    <img src="img/apaga.jpg"id="luz" alt="" onmouseover="acende()" onmouseout="apaga()"  onclick="quebra()">
+</body>
+</html>
