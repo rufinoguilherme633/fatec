@@ -1,0 +1,84 @@
+Data sem vetor
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="utf-8">
+<head>
+<title> case </title>
+<script>
+var tempo=new Date();
+var diaSemana=tempo.getDay();
+switch (diaSemana) {
+    case 0:
+        document.write("Hoje é Domingo, ");
+        break;
+    case 1:
+        document.write("Hoje é Segunda-feira, ");
+        break;
+    case 2:
+        document.write("Hoje é Terça-feira, ");
+        break;
+    case 3:
+        document.write("Hoje é Quarta-feira, ");
+        break;
+    case 4:
+        document.write("Hoje é Quinta-feira, ");
+        break;
+    case 5:
+        document.write("Hoje é Sexta-feira, ");
+        break;
+    case 6:
+        document.write("Hoje é Sábado, ");
+        break;
+}
+var diaMes=tempo.getDate();
+document.write(diaMes);
+ 
+var mes=tempo.getMonth();
+switch (mes) {
+    case 0:
+        document.write(" de Janeiro de ");
+        break;
+    case 1:
+        document.write(" de Fevereiro de ");
+        break;
+    case 2:
+        document.write(" de Março de ");
+        break;
+    case 3:
+        document.write(" de Abril de ");
+        break;
+    case 4:
+        document.write(" de Maio de ");
+        break;
+    case 5:
+        document.write(" de Junho de ");
+        break;
+    case 6:
+        document.write(" de Julho de ");
+        break;
+    case 7:
+        document.write(" de Agosto de ");
+        break;
+    case 8:
+        document.write(" de Setembro de ");
+        break;
+    case 9:
+        document.write(" de Outubro de ");
+        break;
+    case 10:
+        document.write(" de Novembro de ");
+        break;
+    case 11:
+        document.write(" de Dezembro de ");
+        break;
+       
+}
+var ano=tempo.getFullYear();
+document.write(ano);
+ 
+</script>
+</head>
+<body>
+</body>
+</html>
+ 

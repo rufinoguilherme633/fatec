@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var nota  =new Array(0);
+        var soma = 0
+        for(var i = 0; i <8;i++){
+
+            nota[i] = parseFloat(prompt('Digite '+ (i+1)+" ° "+'nota'))
+            soma+= nota[i]
+        }
+        var media = soma / 8;
+        document.write("<h1>Sua notas</h1>")
+        for(var i = 0; i <8;i++){
+            document.write(nota[i]+ "<br>")
+        }
+        document.write('a sua média é'+ "<br>"+ media)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var tempo = new Date();
+        var semana = tempo.getDay();
+        console.log("semana"+semana)
+        var diaSemana = ["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sabado"]
+
+        var diaMes = tempo.getDate()
+        console.log('diaMes'+diaMes)
+        var mes = tempo.getMonth()
+        const meses = [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro"
+];
+
+var ano = tempo.getFullYear()
+
+document.write(diaSemana[semana] + ', '+ meses[diaMes] + " de " + ano)
+
+console.log(meses);
+
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
