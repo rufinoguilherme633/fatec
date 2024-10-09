@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+   crossorigin=""/>
+
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+   crossorigin=""></script>
+
+   <!-- Left route machine CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+
+   <!-- Left route machine JS -->
+   <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+   <style>
+      #map { height: 70vh; background-color: aqua; }
+      .leaflet-marker-icon {
+      border-radius: 50%; /* Torna o ícone redondo */
+      border: 2px solid white; /* Adiciona uma borda, opcional */
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao redor, opcional */
+   }
+   </style>
+</head>
+
+<body>
+   <div id="map"></div>
+
+   <script>
+
+      
+      // Inicializa o mapa
+      var map = L.map('map').setView([-23.59773, -46.92683], 13);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+         maxZoom: 19,
+         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
+
+      // Dados de localização
+      let minhaLocalizacao = {
+         "nome": "guilherme",
+         "curso": "ADM",
+         "motorista": false,
+         "localizacaoAtual": [-23.59773, -46.92683]
+      }
+
+      let pessoas = [
+         {
+            "foto":"",
+            "nome": "Amanda",
+            "curso": "Engenharia",
+            "motorista": true,
+            "localizacaoAtual": [-23.58773, -46.92683]
+         },
+         {
+            "foto":"pessoaFoto.png",
+            "nome": "Gabrielle",
+            "curso": "Computação",
+            "motorista": true,
+            "localizacaoAtual": [-23.57773, -46.91683]
+         }
+      ];
+
+      // Definição do ícone customizado
+      var LeafIcon = L.Icon.extend({
+         options: {
+            iconUrl: 'carro-compacto.png', // Verifique o caminho da imagem
+            iconSize:     [38, 38],
+            shadowSize:   [50, 64],
+            iconAnchor:   [22, 94],
+            shadowAnchor: [4, 62],
+            popupAnchor:  [-3, -76],
+            className: 'leaflet-marker-icon'
+         }
+      });
+
+      
+      var carroIcon = new LeafIcon();
+
+      // Adicionando os marcadores no mapa
+      var marker1 = L.marker(minhaLocalizacao.localizacaoAtual).addTo(map).bindPopup(minhaLocalizacao.nome);
+
+      pessoa = pessoas.forEach(pessoa => {
+         var customIcon  = new LeafIcon({iconUrl:pessoa.foto || 'pessoa.png'});
+
+         var marker2 = L.marker(pessoa.localizacaoAtual, { icon: customIcon  }).addTo(map).bindPopup(pessoa.nome);
+
+      });
+      
+
+   </script>
+</body>
+</html>
