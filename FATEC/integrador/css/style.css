@@ -28,8 +28,13 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.image_logo{
+.container_logo{
     height: 40vh;
+
+}
+.image_logo{
+    display: flex;
+    height: 100%;
 }
 
 .container_welcome{
@@ -43,8 +48,14 @@ body{
     font-weight: normal;
 
 }
+
+.container_image{
+    height: 30vh;
+
+}
 .image_item_left{
-    height: 40vh;
+    display: flex;
+    height: 100%;
 }
 
 
@@ -82,19 +93,24 @@ body{
     transition: background-color 0.3s ease;
 }
 
-.input_form {
-    width: 100%;
+.container_input_form {
+    display: flex;
     width:90% ; /* Largura máxima do campo de entrada */
     padding: 15px 20px;
-    border: none;
     border-radius: 5px;
-    font-size: 24px;
     color: #333;
     background-color: #FBFBFB;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    gap:5%;
 }
+.input_form{
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    width: 100%;
 
+}
 
 .conteiner_create_count{
     text-align: end;

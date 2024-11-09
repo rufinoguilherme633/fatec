@@ -1,74 +1,100 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    width: 100vw;
+body {
+  height: 100vh;
+  width: 100vw;
 }
 
-.container_cadastro{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+.container_cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
 }
 
-.container_form_cadastro{
-    width: 80%;
-    height: 90%;
-background-color: white;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
+.container_form_cadastro {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.text_cadastro {
+  height: 20%;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: centerX;
+}
 
-.text_cadastro{
-    font-size: 120px;
-
+.container_input {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 60%;
+  justify-content: space-around;
+  
+}
+.group_inputs_left {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.group_inputs_rigth {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .input_form {
-    
-    padding: 15px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 24px;
-    color: #333;
-    background-color: #FBFBFB;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 16px 0px 16px 23px;
+  
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #333;
+  background-color: #fbfbfb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .input_form:focus {
-    outline: none;
+  outline: none;
 }
 .custom_button_cadastro {
-    display: flex;
-    align-items: center;
-    background-color: #2171EC; /* Cor de fundo do botão */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 20px 70px;
-    font-size: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #2171ec; /* Cor de fundo do botão */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 60px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
 }
 
-.input_group{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+.input_form_cadastro {
+  width: 60%;
 }
 
-.input_form_cadastro{
-    width: 30%;
+.container_image {
+  position: absolute; /* A imagem será posicionada em relação ao contêiner pai */
+  bottom: 0%; /* Centralizando a imagem verticalmente */
+  left: 0%;
+}
+.image_item_left {
+  height: 40vh;
 }
