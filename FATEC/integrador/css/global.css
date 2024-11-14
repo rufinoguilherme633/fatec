@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  background-color: #2171ec;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+.logo {
+  width: 10rem;
+  height: auto;
+}
+.titulo_header{
+  color: #fbfbfb;
+  font-size: 2.5rem;
+  border: #333;
+  text-shadow:
+  2px 2px 0 #000,   /* Sombra direita inferior */
+  -2px -2px 0 #000, /* Sombra esquerda superior */
+  2px -2px 0 #000,  /* Sombra direita superior */
+  -2px 2px 0 #000;  /* Sombra esquerda inferior */
+
+}
+.custom_button {
+  display: flex;
+  align-items: center;
+  background-color: #2171ec; /* Cor de fundo do botão */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 60px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+}
+
+
+
+#fileInput, #fileInputCar{
+  display: none;
+}
+
+
+.input_form {
+  padding: 16px 0px 16px 23px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #333;
+  background-color: #fbfbfb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.input_form:focus {
+  outline: none;
+}

@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../css/global.css">
+
     <link rel="stylesheet" href="../../css/cadastroCarro.css">
+
 </head>
 
 <body>
@@ -17,22 +20,23 @@
 
             <div class="container_input">
                 <div class="group_inputs_left">
+                    <input type="text" class="input_form input_form_cadastro" id="cnh" name="cnh" placeholder="cnh">
+
                     <input type="text" class="input_form input_form_cadastro" id="Modelo" name="Modelo" placeholder="Modelo">
                 
-                    <input type="placa" class="input_form input_form_cadastro" id="placa" name="placa" placeholder="placa">
-
+                    <input type="text" class="input_form input_form_cadastro" id="placa" name="placa" placeholder="placa">
                  </div>
                 
-     
-                
                 <div class="group_inputs_rigth">
-                    <button class="botao-escolha">
-                        <img src="../../images/carro_dar_carona_icon.svg"  />
-                      </button>                </div>
+                    <label class="botao-escolha" for="fileInput" onclick="trocarImagem('fileInput','imagePreview')">
+                        <input type="file" id="fileInput" accept="image/*" class="input_form" >
+                        <img id="imagePreview" src="../../images/carro_dar_carona_icon.svg"  />
+                    </label>  
+                </div>
             </div>
             
             
-            <input class="custom_button_cadastro" type="submit" value="Enviar">
+            <input class="custom_button" type="submit" value="Enviar">
         </form>
         <div class="container_image">
             <img class="image_item_left" src="../images/Subtract.png" alt="">
@@ -41,6 +45,7 @@
     </div>
 
 </body>
+    <script src="../../JS/trocarFoto.js"></script>
 
 </html>
 

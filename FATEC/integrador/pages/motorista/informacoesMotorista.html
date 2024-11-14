@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Informações do Motorista</title>
+    <link rel="stylesheet" href="../../css/global.css">
+
     <link rel="stylesheet" href="../../css/informacoesMotorista.css" />
+
   </head>
 
   <body>
     <div class="container">
       <header>
-        <img src="../images/logHeaderPesquisaCarona.svg" alt="" class="logo">
+        <img src="../images/logHeaderPesquisaCarona.svg" alt="" class="logo" />
         <span class="titulo_header">Fatecando</span>
       </header>
 
@@ -20,21 +23,48 @@
         <div class="container_info_motorista_carro">
           <!-- Informações do Motorista -->
           <div class="container_informacoes_motorista">
-            <img src="../../images/foto_pessoa.svg" alt="Foto do Motorista">
-
+            <label
+              for="fileInput"
+              onclick="trocarImagem('fileInput','imagePreview')"
+            >
+              <input type="file" name="" id="fileInput" accept="image/*" />
+              <img
+                id="imagePreview"
+                src="../../images/foto_pessoa.svg"
+                alt="Foto do Motorista"
+              />
+            </label>
             <div class="campo">
               <label for="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" value="Guilherme Rufino" readonly />
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                value="Guilherme Rufino"
+                readonly
+              />
               <a href="#" class="editar">✏️</a>
             </div>
             <div class="campo">
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" value="gui8878787@gmail.com" readonly />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value="gui8878787@gmail.com"
+                readonly
+              />
               <a href="#" class="editar">✏️</a>
             </div>
             <div class="campo">
               <label for="telefone">Telefone:</label>
-              <input type="tel" id="telefone" name="telefone" value="(11) 9999-9999" readonly />
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                value="(11) 9999-9999"
+                readonly
+              />
               <a href="#" class="editar">✏️</a>
             </div>
             <div class="campo">
@@ -46,15 +76,37 @@
 
           <!-- Informações do Carro -->
           <div class="container_informacoes_carro">
-            <img src="../../images/foto_carro.svg" alt="Ícone do Carro">
+            <label
+              for="fileInputCar"
+              onclick="trocarImagem('fileInputCar','fileImageCar')"
+            >
+              <input type="file" id="fileInputCar" accept="image/*" />
+              <img
+                src="../../images/foto_carro.svg"
+                alt="Ícone do Carro"
+                id="fileImageCar"
+              />
+            </label>
             <div class="campo">
               <label for="modelo">Modelo:</label>
-              <input type="text" id="modelo" name="modelo" value="HB@" readonly />
+              <input
+                type="text"
+                id="modelo"
+                name="modelo"
+                value="HB@"
+                readonly
+              />
               <a href="#" class="editar">✏️</a>
             </div>
             <div class="campo">
               <label for="placa">Placa:</label>
-              <input type="text" id="placa" name="placa" value="BBB-BBBB" readonly />
+              <input
+                type="text"
+                id="placa"
+                name="placa"
+                value="BBB-BBBB"
+                readonly
+              />
               <a href="#" class="editar">✏️</a>
             </div>
             <div class="campo">
@@ -64,14 +116,22 @@
             </div>
             <div class="campo">
               <label for="capacidade">Capacidade:</label>
-              <input type="number" id="capacidade" name="capacidade" value="5" readonly />
+              <input
+                type="number"
+                id="capacidade"
+                name="capacidade"
+                value="5"
+                readonly
+              />
               <a href="#" class="editar">✏️</a>
             </div>
           </div>
         </div>
 
-        <input class="custom_button_cadastro" type="submit" value="Atualizar" />
+        <input class="custom_button" type="submit" value="Atualizar" />
       </form>
     </div>
+
+    <script src="../../JS/trocarFoto.js"></script>
   </body>
 </html>

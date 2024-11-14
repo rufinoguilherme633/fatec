@@ -1,14 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    height: 100vh;
-    width: 100vw;
-  }
-  
+
   .container_cadastro {
     display: flex;
     flex-direction: column;
@@ -58,34 +48,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
   }
-  .input_form {
-    padding: 16px 0px 16px 23px;
-    
-    border: none;
-    border-radius: 5px;
-    font-size: 17px;
-    color: #333;
-    background-color: #fbfbfb;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .input_form:focus {
-    outline: none;
-  }
-  .custom_button_cadastro {
-    display: flex;
-    align-items: center;
-    background-color: #2171ec; /* Cor de fundo do botão */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 14px 60px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 50px;
-  }
+
   
   .input_form_cadastro {
     width: 60%;
@@ -108,11 +71,13 @@ align-items: center;
     justify-content: center;
     border-radius: 15px; /* Bordas arredondadas mais suaves */
     width: 20rem;
+    max-width: 100%;
     height: 45vh;
     color: #fff; /* Cor do texto */
     font-size: 1.2rem; /* Tamanho da fonte */
     font-weight: bold; /* Texto em negrito */
     border: none; /* Remove bordas padrão */
     cursor: pointer; /* Mostra que é clicável */
+    overflow: hidden;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Transição suave */
   }
