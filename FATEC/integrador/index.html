@@ -40,18 +40,19 @@
 
                 <div class="container_input_form">
                     <img src="./images/password_icon.svg" alt="">
-                    <input type="password" class="input_form_login" id="password_input"  name="password" required placeholder="senha">
+                    <input type="password" class="input_form_login" id="password"  name="password" required placeholder="senha">
                 </div>
 
                 <div class="conteiner_create_count">
                     <button class="button_create_count" onclick="mudarPagina(null,'./pages/escolhaTipoUsuario.html')">Criar uma conta</button>
                 </div>
-                <input  class="custom_button" type="submit" value="Enviar" >
+                <input  class="custom_button" type="submit" value="Enviar" onclick="login(event)">
             </form>
         </div>
     </div>
 
     <script src="./JS/mudarPagina.js"></script>
+    <script src="./JS/login.js"></script>
 </body>
 
 </html>

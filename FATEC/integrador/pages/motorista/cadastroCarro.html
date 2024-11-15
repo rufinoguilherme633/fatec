@@ -15,14 +15,14 @@
     <div class="container_cadastro">
 
 
-        <form class="container_form_cadastro" action="/enviar_dados" method="POST">
+        <form class="container_form_cadastro" action="#" method="#" onsubmit="pegarDadosCarro(event)">
             <h1 class="text_cadastro">Cadastre seu veiculo</h1>
 
             <div class="container_input">
                 <div class="group_inputs_left">
                     <input type="text" class="input_form input_form_cadastro" id="cnh" name="cnh" placeholder="cnh">
 
-                    <input type="text" class="input_form input_form_cadastro" id="Modelo" name="Modelo" placeholder="Modelo">
+                    <input type="text" class="input_form input_form_cadastro" id="modelo" name="Modelo" placeholder="Modelo">
                 
                     <input type="text" class="input_form input_form_cadastro" id="placa" name="placa" placeholder="placa">
                  </div>
@@ -39,13 +39,17 @@
             <input class="custom_button" type="submit" value="Enviar">
         </form>
         <div class="container_image">
-            <img class="image_item_left" src="../images/Subtract.png" alt="">
+            <img class="image_item_left" src="../../images/Subtract.png" alt="">
         </div>
 
     </div>
 
 </body>
+<script src="../../JS/pegarDadosPessoa.js"></script>
+<script src="../../JS/pegarDadosCarro.js"></script>
+<script src="../../JS/cadastroMotorista.js"></script>
     <script src="../../JS/trocarFoto.js"></script>
+  
 
 </html>
 

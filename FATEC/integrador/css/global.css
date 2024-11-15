@@ -38,6 +38,7 @@ header {
 .custom_button {
   display: flex;
   align-items: center;
+  text-align: center;
   background-color: #2171ec; /* Cor de fundo do botão */
   color: white;
   border: none;
