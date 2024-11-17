@@ -21,16 +21,20 @@
             <div class="containerImgMapa">
                 <h1></h1>
                 <img src="../../images/mapa.png" class ='mapa'alt="">
+
+                <button onclick="mudarPagina(null,'./informacoesPassageiro.html')">
+                    <img src="../../images//foto_pessoa.svg" alt="foto usuario">
+                </button>
             </div>
             <div class="containerFormsPesquisaDestino">
                 <h1 class="titulo">Passageiro</h1>
                 <h2 class="subtitulo">Minha carona</h2>
 
-            <form action="" class="formsPesquisaCarona">
+            <form  class="formsPesquisaCarona" onsubmit="event.preventDefault(); mudarPagina(null, './mapaLocalizacao.html')"> 
                 <input type="text" placeholder="Local de partida" class="input_form" id="local_partida">
                 <input type="text" placeholder="Para onde vamos ?" class="input_form" id="local_destino">
 
-                <button type=“button”  class="custom_button" onclick="pesquisarRota(event)">Pesquisar</button>
+                <input type="submit"  class="custom_button" value="Pesquisar" ></input>
             </form>
             </div>
         </main>
@@ -38,6 +42,7 @@
 
     </div>
 <script src="../../JS/pesquisarRota.js"></script>
+<script src="../../JS/mudarPagina.js"></script>
 
 </body>
 

@@ -59,7 +59,7 @@
             "localizacaoAtual": [-23.58773, -46.92683]
          },
          {
-            "foto":"pessoaFoto.png",
+            "foto":"../../images/pessoaFoto.png",
             "nome": "Gabrielle",
             "curso": "Computação",
             "motorista": true,
@@ -70,7 +70,7 @@
       // Definição do ícone customizado
       var LeafIcon = L.Icon.extend({
          options: {
-            iconUrl: 'carro-compacto.png', // Verifique o caminho da imagem
+            iconUrl: '../../images/carro-compacto.png', // Verifique o caminho da imagem
             iconSize:     [38, 38],
             shadowSize:   [50, 64],
             iconAnchor:   [22, 94],
@@ -87,7 +87,7 @@
       var marker1 = L.marker(minhaLocalizacao.localizacaoAtual).addTo(map).bindPopup(minhaLocalizacao.nome);
 
       pessoa = pessoas.forEach(pessoa => {
-         var customIcon  = new LeafIcon({iconUrl:pessoa.foto || 'pessoa.png'});
+         var customIcon  = new LeafIcon({iconUrl:pessoa.foto || '../../images/pessoa.png'});
 
          var marker2 = L.marker(pessoa.localizacaoAtual, { icon: customIcon  }).addTo(map).bindPopup(pessoa.nome);
 

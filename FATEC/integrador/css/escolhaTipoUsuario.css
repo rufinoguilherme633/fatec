@@ -18,7 +18,7 @@
     align-items: center;
     flex-direction: column;
     width: 70%;
-    height: 60%;
+    height: 70%;
     justify-content: space-between;
   }
   .container-escolha {
@@ -28,6 +28,9 @@
     justify-content: space-around;
   }
   
+  .title{
+    font-size: 3rem;
+  }
   .botao-escolha {
     background-color: #2171EC;
     display: flex;

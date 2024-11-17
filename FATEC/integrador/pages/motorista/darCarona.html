@@ -16,6 +16,11 @@
         <header>
             <img src="../../images/logHeaderPesquisaCarona.svg" alt="" class="logo">
             <span class="titulo_header">Fatecando</span>
+
+
+            <button onclick="mudarPagina(null,'./informacoesMotorista.html')">
+                <img src="../../images//foto_pessoa.svg" alt="foto usuario">
+            </button>
         </header>
         <main>
             <div class="containerImgMapa">
@@ -26,17 +31,19 @@
                 <h1 class="titulo">Dar carona</h1>
                 <h2 class="subtitulo">Minha carona</h2>
 
-            <form action="" class="formsPesquisaCarona">
+            <form action="" class="formsPesquisaCarona" onsubmit="event.preventDefault(); mudarPagina(null, './localizarPasageiro.html')">
                 <input type="text" placeholder="Local de partida" class="input_form" id="local_partida">
                 <input type="text" placeholder="Para onde vamos ?" class="input_form" id="local_destino">
 
-                <button type=“button”  class="custom_button" onclick="pesquisarRota(event)">Pesquisar</button>
+                <input type="submit"  class="custom_button" value="Pesquisar"></input>
             </form>
             </div>
         </main>
 
 
     </div>
+    <script src="../../JS/mudarPagina.js"></script>
+
 <script src="../../JS/pesquisarRota.js"></script>
 
 </body>
