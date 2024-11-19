@@ -72,3 +72,15 @@ header {
 .input_form:focus {
   outline: none;
 }
+
+.foto-usuario{
+
+  all: unset; /* Remove todos os estilos padrão */
+  display: inline-block; /* Permite aplicar padding e outras propriedades */
+  cursor: pointer;
+}
+.foto-usuario-img{
+  width: 2rem;
+  height: 2rem;
+
+}

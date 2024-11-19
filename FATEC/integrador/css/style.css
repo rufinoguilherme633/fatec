@@ -108,3 +108,23 @@
 
 
 
+
+.esqueciSenha {
+    all: unset; /* Remove todos os estilos padrão */
+    display: inline-block; /* Permite aplicar padding e outras propriedades */
+    cursor: pointer; /* Adiciona o comportamento de botão */
+    padding: 10px 20px; /* Ajusta o espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    
+    background-color: transparent; /* Fundo transparente */
+    transition: all 0.3s ease; /* Suaviza mudanças */
+  }
+  
+  .custom-button:hover {
+    background-color: #2171EC; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+  }
+  
+
+  
